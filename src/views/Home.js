@@ -17,9 +17,9 @@ export default function Home() {
 
 	useEffect(() => {
 		axios
-			.get("http://localhost:5000/movies")
+			.get("https://futurebackend.herokuapp.com/movies")
 			.then((result) => {
-				setData(result.data)
+				setData(result.data);
 			})
 			.catch((err) => {
 				console.log(err);
